@@ -24,7 +24,7 @@
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-circle">
-                        <button class="btn px-6 py-2 bg-[#B4F461] text-black">Blog</button>
+                        <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Blog</button>
                     </div>
                 </div>
             </div>
@@ -34,15 +34,53 @@
             </div>
             <div class="navbar-end gap-2">
                 <img src="images/coin.png" alt="">
-                <div class="text-[#737373] lg:text-lg font-[600]">5500 BDT</div>
+                <div id="account-balance" class="text-[#737373] lg:text-lg font-[600]">5500 BDT</div>
             </div>
         </div>
         <!-- navbar ends here -->
     </header>
 
-    <main>
-
+    <main class="mx-auto">
+         <!-- features start here -->
+         <div class="flex justify-center gap-2 mt-20 mb-5">
+            <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donation</button>
+            <button class="btn px-6 py-2 bg-[#FFFFFF] border-2 text-[#737373] lg:text-lg">History</button>
+         </div>
+         <div class="">
+            <div class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2">
+                <!-- images -->
+                <div>
+                <img class="rounded-lg" src="images/noakhali.png" alt="">
+                </div>
+                <!-- content -->
+                <div class="lg:w-[522px] lg:h-[57px]">
+                <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img src="images/coin.png" alt=""><span id="current-balance">0</span>BDT</button>
+                <h3 class="mt-4 text-lg font-[600]">Donate for Flood at Noakhali, Bangladesh</h3>
+                <h6 class="mt-6 text-[#737373]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</h6>
+                <div>
+                <form action="
+                ">
+                <div class="form-control mt-4">
+                    <input id="input-donation-amount" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered" required />
+                </div>
+                <div id="btn-donation" class="form-control mt-4">
+                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donation</button>
+                </div>
+                </form>
+                </div>
+                  
+            </div>
+         </div>
+         <!-- features ends here -->
     </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="js/utilities.js"></script>
+    <script src="js/donation.js"></script>
 </body>
 
 </html>
