@@ -15,6 +15,7 @@ document.getElementById('btn-donation').addEventListener('click',function(event)
         const remainingAccountBalance = accountBalance - addAmount;
         document.getElementById('current-balance').innerText = newBalance;
         document.getElementById('account-balance').innerText = remainingAccountBalance;
+        document.getElementById('my_modal_1').showModal();
     }
 });
 
@@ -35,6 +36,7 @@ document.getElementById('btn-donation2').addEventListener('click',function(event
         const remainingAccountBalance = accountBalance - addAmount2;
         document.getElementById('current-balance2').innerText = newBalance2;
         document.getElementById('account-balance').innerText = remainingAccountBalance;
+        document.getElementById('my_modal_1').showModal();
     }
 });
 
@@ -56,5 +58,6 @@ document.getElementById('btn-donation3').addEventListener('click',function(event
         const remainingAccountBalance = accountBalance - addAmount3;
         document.getElementById('current-balance3').innerText = newBalance3;
         document.getElementById('account-balance').innerText = remainingAccountBalance;
+        document.getElementById('my_modal_1').showModal();
     }
 });
