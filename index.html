@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        .lexend{
+        .lexend {
             font-family: "Lexend", sans-serif;
         }
     </style>
@@ -24,7 +24,8 @@
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-circle">
-                        <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Blog</button>
+                        <button id="btn-click-blog"
+                            class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Blog</button>
                     </div>
                 </div>
             </div>
@@ -41,124 +42,151 @@
     </header>
 
     <main class="mx-auto">
-         <!-- features start here -->
-         <div class="flex justify-center gap-2 mt-20 mb-5">
-            <button id="show-donation-card" class="btn px-6 py-2 bg-[#FFFFFF]  text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">Donation</button>
-            <button id="show-donation-history" class="btn px-6 py-2 bg-[#FFFFFF] border-2 text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">History</button>
-         </div>
-         <!-- features ends here -->
-         <!-- card 1 : noakhali donation-->
-            <div id="donation-cards">
-            <div class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2">
+        <!-- features start here -->
+        <div class="flex justify-center gap-2 mt-20 mb-5">
+            <button id="show-donation-card"
+                class="btn px-6 py-2 bg-[#FFFFFF]  text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">Donation</button>
+            <button id="show-donation-history"
+                class="btn px-6 py-2 bg-[#FFFFFF] border-2 text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">History</button>
+        </div>
+        <!-- features ends here -->
+        <!-- card 1 : noakhali donation-->
+        <div id="donation-cards">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2">
                 <!-- images -->
                 <div>
-                <img class="rounded-lg" src="images/noakhali.png" alt="">
+                    <img class="rounded-lg" src="images/noakhali.png" alt="">
                 </div>
                 <!-- content -->
                 <div class="lg:w-[522px] lg:h-[57px]">
-                <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img src="images/coin.png" alt=""><span id="current-balance">0</span>BDT</button>
-                <h3 class="mt-4 text-lg font-[600]">Donate for Flood at Noakhali, Bangladesh</h3>
-                <h6 class="mt-6 text-[#737373]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</h6>
-                <div>
-                <form action="
+                    <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img
+                            src="images/coin.png" alt=""><span id="current-balance">0</span>BDT</button>
+                    <h3 class="mt-4 text-lg font-[600]">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <h6 class="mt-6 text-[#737373]"> The recent floods in Noakhali have caused significant damage to
+                        homes infrastructure. Your donation will help provide essential supplies and to those affected
+                        by this disaster. Every contribution, big or small, makes difference. Please join us in
+                        supporting the relief efforts and making a positive impact on the lives of those in need.</h6>
+                    <div>
+                        <form action="
                 ">
-                <div class="form-control mt-4">
-                    <input id="input-donation-amount" type="text" placeholder="Write Donation Amount"
-                        class="input input-bordered" required />
+                            <div class="form-control mt-4">
+                                <input id="input-donation-amount" type="text" placeholder="Write Donation Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div id="btn-donation" class="form-control mt-4">
+                                <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div id="btn-donation" class="form-control mt-4">
-                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
-                </div>
-                </form>
-                </div>
-                  
             </div>
-         </div>
-         <!-- card 2 : feni donation -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2 mt-8">
+            <!-- card 2 : feni donation -->
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2 mt-8">
                 <!-- images -->
                 <div>
-                <img class="rounded-lg" src="images/feni.png" alt="">
+                    <img class="rounded-lg" src="images/feni.png" alt="">
                 </div>
                 <!-- content -->
                 <div class="lg:w-[522px] lg:h-[57px]">
-                <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img src="images/coin.png" alt=""><span id="current-balance2">600</span>BDT</button>
-                <h3 class="mt-4 text-lg font-[600]">Donate for Flood Relief in Feni,Bangladesh</h3>
-                <h6 class="mt-6 text-[#737373]">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</h6>
-                <div>
-                <form action="
+                    <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img
+                            src="images/coin.png" alt=""><span id="current-balance2">600</span>BDT</button>
+                    <h3 class="mt-4 text-lg font-[600]">Donate for Flood Relief in Feni,Bangladesh</h3>
+                    <h6 class="mt-6 text-[#737373]">The recent floods in Feni have devastated local communities, leading
+                        to severe disruption and loss. Your generous donation will help provide immediate aid, including
+                        food, clean water, and medical supplies, to those affected by this calamity. Together, we can
+                        offer crucial support and help rebuild lives in the aftermath of this disaster. Every
+                        contribution counts towards making a real difference. Please consider donating today to assist
+                        those in urgent need.</h6>
+                    <div>
+                        <form action="
                 ">
-                <div class="form-control mt-4">
-                    <input id="input-donation-amount2" type="text" placeholder="Write Donation Amount"
-                        class="input input-bordered" required />
+                            <div class="form-control mt-4">
+                                <input id="input-donation-amount2" type="text" placeholder="Write Donation Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div id="btn-donation2" class="form-control mt-4">
+                                <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div id="btn-donation2" class="form-control mt-4">
-                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
-                </div>
-                </form>
-                </div>
-                  
             </div>
-         </div>
-         <!-- card 3 : quota movement donation -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2 mt-8">
+            <!-- card 3 : quota movement donation -->
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-white border shadow px-8 py-6 lg:ml-40 lg:mr-40 gap-2 mt-8">
                 <!-- images -->
                 <div>
-                <img class="rounded-lg" src="images/quota-protest.png" alt="">
+                    <img class="rounded-lg" src="images/quota-protest.png" alt="">
                 </div>
                 <!-- content -->
                 <div class="lg:w-[522px] lg:h-[57px]">
-                <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img src="images/coin.png" alt=""><span id="current-balance3">2400</span>BDT</button>
-                <h3 class="mt-4 text-lg font-[600]">Aid for Injured in the Quota Movement</h3>
-                <h6 class="mt-6 text-[#737373]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</h6>
-                <div>
-                <form action="
+                    <button class="btn px-6 py-2 bg-gray-300 border-2 text-[#737373] lg:text-lg"><img
+                            src="images/coin.png" alt=""><span id="current-balance3">2400</span>BDT</button>
+                    <h3 class="mt-4 text-lg font-[600]">Aid for Injured in the Quota Movement</h3>
+                    <h6 class="mt-6 text-[#737373]">The recent Quota movement has resulted in numerous injuries and
+                        significant hardship for many individuals. Your support is crucial in providing medical
+                        assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help
+                        ensure that injured individuals receive the care and support they need during this challenging
+                        time. Every donation plays a vital role in alleviating their suffering and aiding in their
+                        recovery. Please consider making a donation to support these brave individuals in their time of
+                        need.</h6>
+                    <div>
+                        <form action="
                 ">
-                <div class="form-control mt-4">
-                    <input id="input-donation-amount3" type="text" placeholder="Write Donation Amount"
-                        class="input input-bordered" required />
+                            <div class="form-control mt-4">
+                                <input id="input-donation-amount3" type="text" placeholder="Write Donation Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div id="btn-donation3" class="form-control mt-4">
+                                <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div id="btn-donation3" class="form-control mt-4">
-                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
-                </div>
-                </form>
-                </div>
-                  
             </div>
-         </div>
 
         </div>
-         <!-- donation history start -->
-         <div id="donation-history-section" class="hidden">
+        <!-- donation history start -->
+        <div id="donation-history-section" class="hidden">
             <div id="donation-history-container" class="space-y-3">
 
-        </div>
-        <!-- donation history end -->
-            
+            </div>
+            <!-- donation history end -->
+
     </main>
 
     <footer>
 
     </footer>
-   
+
     <!-- Modal from daisyUi -->
     <dialog id="my_modal_1" class="modal flex justify-center items-center ">
         <div class="modal-box text-center mx-auto lg:w-600 lg:h-400">
-          <h1 class="text-3xl font-[800]">Congrates!</h1>
-          <img class="mx-auto mt-2 mb-2" src="images/coin.png" alt="">
-          <p class="py-4">You have Donated for Humankind</p>
-          <p class="text-xl font-[800]">Successfully</p>
-          <div class="modal-action justify-center">
-            <form method="dialog">
-              <button class="btn text-center">close confirmation</button>
-            </form>
-          </div>
+            <h1 class="text-3xl font-[800]">Congrates!</h1>
+            <img class="mx-auto mt-2 mb-2" src="images/coin.png" alt="">
+            <p class="py-4">You have Donated for Humankind</p>
+            <p class="text-xl font-[800]">Successfully</p>
+            <div class="modal-action justify-center">
+                <form method="dialog">
+                    <button class="btn text-center">close confirmation</button>
+                </form>
+            </div>
         </div>
-      </dialog>
-    
+    </dialog>
+
     <script src="js/utilities.js"></script>
     <script src="js/donation.js"></script>
     <script src="js/features.js"></script>
+    <script>
+        document.getElementById('btn-click-blog').addEventListener('click', function () {
+            window.location.href = 'blog.html';
+        });
+    </script>
 </body>
 
 </html>

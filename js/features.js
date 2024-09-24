@@ -5,5 +5,3 @@ document.getElementById('show-donation-card').addEventListener('click',function(
 document.getElementById('show-donation-history').addEventListener('click',function(){
     showSectionById('donation-history-section');
 });
-
-
