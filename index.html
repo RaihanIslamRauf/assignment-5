@@ -67,7 +67,7 @@
                         class="input input-bordered" required />
                 </div>
                 <div id="btn-donation" class="form-control mt-4">
-                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
+                    <button onclick="my_modal_1.showModal()" class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
                 </div>
                 </form>
                 </div>
@@ -94,7 +94,7 @@
                         class="input input-bordered" required />
                 </div>
                 <div id="btn-donation2" class="form-control mt-4">
-                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
+                    <button onclick="my_modal_1.showModal()" class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
                 </div>
                 </form>
                 </div>
@@ -121,7 +121,7 @@
                         class="input input-bordered" required />
                 </div>
                 <div id="btn-donation3" class="form-control mt-4">
-                    <button class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
+                    <button onclick="my_modal_1.showModal()"  class="btn px-6 py-2 bg-[#B4F461] text-black lg:text-lg">Donate Now</button>
                 </div>
                 </form>
                 </div>
@@ -133,6 +133,21 @@
     <footer>
 
     </footer>
+   
+    <!-- Modal from daisyUi -->
+    <dialog id="my_modal_1" class="modal flex justify-center items-center ">
+        <div class="modal-box text-center mx-auto lg:w-600 lg:h-400">
+          <h1 class="text-3xl font-[800]">Congrates!</h1>
+          <img class="mx-auto mt-2 mb-2" src="images/coin.png" alt="">
+          <p class="py-4">You have Donated for Humankind</p>
+          <p class="text-xl font-[800]">Successfully</p>
+          <div class="modal-action justify-center">
+            <form method="dialog">
+              <button class="btn text-center">close confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     
     <script src="js/utilities.js"></script>
     <script src="js/donation.js"></script>
