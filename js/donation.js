@@ -5,7 +5,7 @@ document.getElementById('btn-donation').addEventListener('click', function (even
 
     // validation for donated amount (challenged part)
     if (isNaN(addAmount) || addAmount <= 0) {
-        alert('Failed to Donate. Try it correctly');
+        alert('Invalid Donation Amount');
         return;
     }
     else {
@@ -39,7 +39,7 @@ document.getElementById('btn-donation2').addEventListener('click', function (eve
 
     // validation for donated amount (challenged part)
     if (isNaN(addAmount2) || addAmount2 <= 0) {
-        alert('Failed to Donate. Try it correctly');
+        alert('Invalid Donation Amount');
         return;
     }
     else {
@@ -72,7 +72,7 @@ document.getElementById('btn-donation3').addEventListener('click', function (eve
 
     // validation for donated amount (challenged part)
     if (isNaN(addAmount3) || addAmount3 <= 0) {
-        alert('Failed to Donate. Try it correctly');
+        alert('Invalid Donation Amount');
         return;
     }
     else {
