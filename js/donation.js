@@ -3,7 +3,7 @@ document.getElementById('btn-donation').addEventListener('click', function (even
     event.preventDefault();
     const addAmount = getInputFieldById('input-donation-amount');
 
-    // validation for donated amount
+    // validation for donated amount (challenged part)
     if (isNaN(addAmount) || addAmount <= 0) {
         alert('Failed to Donate. Try it correctly');
         return;
@@ -37,7 +37,7 @@ document.getElementById('btn-donation2').addEventListener('click', function (eve
     event.preventDefault();
     const addAmount2 = getInputFieldById('input-donation-amount2');
 
-    // validation for donated amount
+    // validation for donated amount (challenged part)
     if (isNaN(addAmount2) || addAmount2 <= 0) {
         alert('Failed to Donate. Try it correctly');
         return;
@@ -70,7 +70,7 @@ document.getElementById('btn-donation3').addEventListener('click', function (eve
     event.preventDefault();
     const addAmount3 = getInputFieldById('input-donation-amount3');
 
-    // validation for donated amount
+    // validation for donated amount (challenged part)
     if (isNaN(addAmount3) || addAmount3 <= 0) {
         alert('Failed to Donate. Try it correctly');
         return;

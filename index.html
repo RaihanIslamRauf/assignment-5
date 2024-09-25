@@ -19,6 +19,7 @@
 
 <body class="lexend">
     <!-- navbar starts here -->
+    <!-- sticky and blur navbar with button (challenged part) -->
     <div class="sticky top-0 backdrop-blur-lg">
         <div class="navbar bg-[#F9F7F3] lg:p-8 p-4 bg-blur bg-blur bg-opacity-70">
             <div class="navbar-start">
@@ -40,6 +41,7 @@
         </div>
         <!-- navbar ends here -->
         <!-- features start here -->
+        <!-- Button color will change and stay active for specific button (challenged part) -->
         <div class="flex justify-center gap-2 mt-10 mb-10 p-4">
             <button id="show-donation-card"
                 class="btn px-6 py-2 bg-[#FFFFFF]  text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">Donation</button>
@@ -158,7 +160,7 @@
             <!-- donation history end -->
 
     </main>
-    <!-- Modal from daisyUi -->
+    <!-- Modal from daisyUi (challenged part) -->
     <dialog id="my_modal_1" class="modal flex justify-center items-center ">
         <div class="modal-box text-center mx-auto lg:w-600 lg:h-400">
             <h1 class="text-3xl font-[800]">Congrates!</h1>
@@ -176,6 +178,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/donation.js"></script>
     <script src="js/features.js"></script>
+    <!-- One webpage to button click another webpage (challenged part) -->
     <script>
         document.getElementById('btn-click-blog').addEventListener('click', function () {
             window.location.href = 'blog.html';

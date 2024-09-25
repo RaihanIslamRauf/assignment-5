@@ -1,3 +1,4 @@
+// shared functions(challenged part)
 document.getElementById('show-donation-card').addEventListener('click',function(){
     showSectionById('donation-cards');
 });
