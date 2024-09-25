@@ -17,10 +17,10 @@
     <title>Assignment 5</title>
 </head>
 
-<body class="lexend min-h-screen">
-    <header class="mx-auto  bg-[#F9F7F3] lg:p-8 p-4">
-        <!-- navbar starts here -->
-        <div class="navbar bg-[#F9F7F3]">
+<body class="lexend">
+    <!-- navbar starts here -->
+    <div class="sticky top-0 backdrop-blur-lg">
+        <div class="navbar bg-[#F9F7F3] lg:p-8 p-4 bg-blur bg-blur bg-opacity-70">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-circle">
@@ -39,17 +39,16 @@
             </div>
         </div>
         <!-- navbar ends here -->
-    </header>
-
-    <main class="mx-auto mb-10">
         <!-- features start here -->
-        <div class="flex justify-center gap-2 mt-20 mb-5">
+        <div class="flex justify-center gap-2 mt-10 mb-10 p-4">
             <button id="show-donation-card"
                 class="btn px-6 py-2 bg-[#FFFFFF]  text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">Donation</button>
             <button id="show-donation-history"
                 class="btn px-6 py-2 bg-[#FFFFFF] border-2 text-[#737373] lg:text-lg focus:bg-[#B4F461] focus:text-black">History</button>
         </div>
         <!-- features ends here -->
+    </div>
+    <main class="mx-auto mb-10">
         <!-- card 1 : noakhali donation-->
         <div id="donation-cards">
             <div
